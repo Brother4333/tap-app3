@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap Empire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TAP EMPIRE</h1>
+      <p>Зарабатывай очки, выполняя действия и соревнуйся в лидерборде!</p>
+    </header>
+
+    <nav>
+      <button onclick="switchTab('game')">Тапать</button>
+      <button onclick="switchTab('leaderboard')">Лидерборд</button>
+      <button onclick="switchTab('tasks')">Задания</button>
+    </nav>
+
+    <main>
+      <section id="game-tab">
+        <h2>Ваши очки: <span id="score">0</span></h2>
+        <button id="tap-button">ТАП!</button>
+      </section>
+
+      <section id="leaderboard-tab" class="hidden">
+        <h2>🏆 Лидерборд</h2>
+        <ol id="leaderboard-list"></ol>
+        <button onclick="loadLeaderboard()">Загрузить</button>
+      </section>
+
+      <section id="tasks-tab" class="hidden">
+        <h2>📌 Задания</h2>
+        <p>Подпишись на <a href="https://t.me/alfabank_mobile" target="_blank">этот канал</a> и нажми кнопку ниже</p>
+        <button onclick="verifyTask()">Проверить подписку +200 очков</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tap Empire</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

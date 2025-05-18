@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1b2e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background: #2a2540;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #b58df1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #29203d;
+  padding: 10px 0;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+nav button.active {
+  border-bottom: 2px solid #b58df1;
+  color: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+section.active {
+  display: block;
+}
+
+.tap-button {
+  background-color: #b58df1;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  color: #1e1b2e;
+  border-radius: 12px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tap-button:hover {
+  background-color: #a07cdf;
+}
+
+.score {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #f6f3ff;
+}
+
+.task-box {
+  background-color: #32264d;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: #eee;
+}
+
+.task-box a {
+  color: #b58df1;
+  text-decoration: underline;
+}
+
+.task-box button {
+  margin-top: 10px;
+  background: #b58df1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1e1b2e;
+}
